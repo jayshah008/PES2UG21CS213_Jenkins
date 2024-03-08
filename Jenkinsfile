@@ -21,7 +21,8 @@ pipeline {
         }    
         stage('Test') {
             steps {
-                sh './output'
+                // Intentional error: incorrect command used
+                sh './outpt'
                 echo 'Test Stage Successful'
             }
         }
